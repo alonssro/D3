@@ -17,5 +17,9 @@
   {
     "name": "veg surprise",
     "orders": 900
+  },
+  {
+    "name": "veg burguer",
+    "orders": 1500
   }
 ]
