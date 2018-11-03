@@ -11,8 +11,27 @@
 <body>
 
   <div class="canvas">
-  </div>
 
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-firestore.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBKIld-BVeWsyYprcbt9WpAieOeZsmSQ10",
+      authDomain: "d3-proyect.firebaseapp.com",
+      databaseURL: "https://d3-proyect.firebaseio.com",
+      projectId: "d3-proyect",
+      storageBucket: "d3-proyect.appspot.com",
+      messagingSenderId: "591792872331"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+    db.settings({
+      timestampsInSnapshots: true
+    })
+  </script>
   <script src="https://d3js.org/d3.v5.js"></script>
   <script src="./index.js"></script>
 </body>
